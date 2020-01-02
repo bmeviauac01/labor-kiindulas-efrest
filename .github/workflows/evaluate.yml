@@ -25,7 +25,7 @@ jobs:
           dotnet-version: "2.1.607"
 
       - name: Build sln
-        run: dotnet build --output ./bin/
+        run: dotnet build
 
       - name: Evaluate
         uses: docker://akosdudas/sflab-ahk:efrest-2020

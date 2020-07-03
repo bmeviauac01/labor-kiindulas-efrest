@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace api.Controllers
 {
-    [Route("api/statuses")] // DO NO CHANGE THE URL - NE VALTOZTASD MEG AZ URLT
+    [Route("api/statuses/neptun")] // REPLACE neptun WITH YOUR NEPTUN CODE SMALL CAPS - CSERELD LE A neptun-t a SAJAT NEPTUN KODODRA KISBETUKKEL
     [ApiController]
     public class StatusesController : ControllerBase
     {

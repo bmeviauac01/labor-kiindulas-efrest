@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,15 +16,16 @@ namespace api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddControllers();
 
             services.AddDbContext<DAL.EfDbContext.TasksDbContext>(options => options.UseSqlite("Data Source=tasks.db"));
             services.AddScoped<DAL.IStatusesRepository, DAL.StatusesRepository>();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app)
         {
-            app.UseMvc();
+            app.UseRouting();
+            app.UseEndpoints(endpoints => endpoints.MapControllers());
         }
     }
 }

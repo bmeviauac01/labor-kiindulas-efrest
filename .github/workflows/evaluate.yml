@@ -28,7 +28,7 @@ jobs:
         run: dotnet build
 
       - name: Evaluate
-        uses: docker://akosdudas/sflab-ahk:efrest-2021
+        uses: docker://bmeaut/sflab-ahk:efrest-2021
 
       - name: Publish results
         uses: akosdudas/ahk-action-publish-result-pr@v1

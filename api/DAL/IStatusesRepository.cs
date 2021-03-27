@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 namespace api.DAL
 {
-    // DO NOT CHANGE ANYTHING
-    // NE VALTOZTASS MEG SEMMIT
+    // DO NOT MODIFY THE EXISTING METHODS
+    // NE VALTOZTASD MEG A MEGLEVO FUGGVENYEKET
     public interface IStatusesRepository
     {
         IReadOnlyCollection<Status> List();

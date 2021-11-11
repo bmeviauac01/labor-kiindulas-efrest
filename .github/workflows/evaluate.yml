@@ -32,9 +32,10 @@ jobs:
       - name: Evaluate
         uses: docker://ghcr.io/bmeviauac01/sflab-ahk:efrest-2022
 
-      - name: Publish results
-        uses: akosdudas/ahk-action-publish-result-pr@v1
+      - name: Publish result
+        uses: docker://ghcr.io/akosdudas/ahk-publish-results-pr:v1
         with:
-          input-file: "result.txt"
-          image-extension: ".png"
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          AHK_IMAGEEXT: ".png"
+          AHK_APPTOKEN: "${{ secrets.AHK_APPTOKEN }}"
+          AHK_APPSECRET: "${{ secrets.AHK_APPSECRET }}"

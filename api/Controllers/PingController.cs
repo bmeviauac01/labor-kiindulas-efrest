@@ -1,17 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace api.Controllers
+namespace Bme.Swlab1.Rest.Controllers;
+
+// DO NOT CHANGE ANYTHING!
+// NE VALTOZTASS MEG SEMMIT!
+[Route("api/[Controller]")]
+[ApiController]
+public class PingController : ControllerBase
 {
-    // DO NOT CHANGE ANYTHING
-    // NE VALTOZTASS MEG SEMMIT
-    [Route("api/ping")]
-    [ApiController]
-    public class PingController : ControllerBase
+    [HttpGet]
+    public ActionResult<string> Ping()
     {
-        [HttpGet]
-        public ActionResult<string> Ping()
-        {
-            return Ok("pong");
-        }
+        return Ok("pong");
     }
 }

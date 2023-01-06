@@ -1,31 +1,30 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Bme.Swlab1.Rest.Dal.Entities;
+using Bme.Swlab1.Rest.Services;
+
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
-namespace api
+namespace Bme.Swlab1.Rest;
+
+public class Startup
 {
-    public class Startup
+    public Startup(IConfiguration configuration)
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        Configuration = configuration;
+    }
 
-        public IConfiguration Configuration { get; }
+    public IConfiguration Configuration { get; }
 
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddControllers();
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddControllers();
 
-            services.AddDbContext<DAL.EfDbContext.TasksDbContext>(options => options.UseSqlite("Data Source=tasks.db"));
-            services.AddScoped<DAL.IStatusesRepository, DAL.StatusesRepository>();
-        }
+        services.AddDbContext<TasksDbContext>(options => options.UseSqlite("Data Source=tasks.db"));
+        services.AddScoped<IStatusService, StatusService>();
+    }
 
-        public void Configure(IApplicationBuilder app)
-        {
-            app.UseRouting();
-            app.UseEndpoints(endpoints => endpoints.MapControllers());
-        }
+    public void Configure(IApplicationBuilder app)
+    {
+        app.UseRouting();
+        app.UseEndpoints(endpoints => endpoints.MapControllers());
     }
 }

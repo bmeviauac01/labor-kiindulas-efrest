@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Bme.Swlab1.Rest.Dal.Entities;
+namespace Bme.Swlab1.Rest.Dal;
 
 public class TasksDbContext : DbContext
 {

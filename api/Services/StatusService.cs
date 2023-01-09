@@ -1,4 +1,4 @@
-﻿using Bme.Swlab1.Rest.Dal.Entities;
+﻿using Bme.Swlab1.Rest.Dal;
 using Bme.Swlab1.Rest.Dtos;
 
 namespace Bme.Swlab1.Rest.Services;

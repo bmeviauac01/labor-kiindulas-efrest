@@ -8,13 +8,13 @@ namespace Bme.Swlab1.Rest.Controllers;
 // TODO: CSERELD LE A neptun-t a SAJAT NEPTUN KODODRA KISBETUKKEL
 [Route("api/[controller]/neptun")]
 [ApiController]
-public class StatusesController : ControllerBase
+public class StatusController : ControllerBase
 {
     private readonly IStatusService _statusService;
 
     // DO NOT CHANGE THE CONSTRUCTOR!
     // NE VALTOZTSD MEG A KONSTRUKTORT!
-    public StatusesController(IStatusService statusService)
+    public StatusController(IStatusService statusService)
     {
         _statusService = statusService;
     }

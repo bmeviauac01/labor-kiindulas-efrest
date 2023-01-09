@@ -3,20 +3,28 @@ using Bme.Swlab1.Rest.Services;
 
 using Microsoft.EntityFrameworkCore;
 
-var builder = WebApplication.CreateBuilder(args);
+namespace Bme.Swlab1.Rest;
 
-builder.Services.AddControllers();
-builder.Services.AddDbContext<TasksDbContext>(options => options.UseSqlite("Data Source=tasks.db"));
-builder.Services.AddScoped<IStatusService, StatusService>();
-
-var app = builder.Build();
-
-using (var serviceScope = app.Services.CreateScope())
+public class Program
 {
-    var context = serviceScope.ServiceProvider.GetRequiredService<TasksDbContext>();
-    context.Database.EnsureCreated();
+    private static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
+
+        builder.Services.AddControllers();
+        builder.Services.AddDbContext<TasksDbContext>(options => options.UseSqlite("Data Source=tasks.db"));
+        builder.Services.AddScoped<IStatusService, StatusService>();
+
+        var app = builder.Build();
+
+        using (var serviceScope = app.Services.CreateScope())
+        {
+            var context = serviceScope.ServiceProvider.GetRequiredService<TasksDbContext>();
+            context.Database.EnsureCreated();
+        }
+
+        app.MapControllers();
+
+        app.Run();
+    }
 }
-
-app.MapControllers();
-
-app.Run();

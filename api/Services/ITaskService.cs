@@ -5,7 +5,10 @@ using Task = Bme.Swlab1.Rest.Dtos.Task;
 namespace Bme.Swlab1.Rest.Services;
 
 // DO NOT MODIFY THE EXISTING METHODS
-// NE VALTOZTASD MEG A MEGLEVO FUGGVENYEKET
+// but you could extend this interface
+// 
+// NE VALTOZTASD MEG A MEGLEVO FUGGVENYEKET,
+// de kigészítheted az interfészt
 public interface ITaskService
 {
     IReadOnlyCollection<Task> List();

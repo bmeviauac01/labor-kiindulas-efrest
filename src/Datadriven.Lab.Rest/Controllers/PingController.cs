@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Bme.Swlab1.Rest.Controllers;
+namespace Datadriven.Lab.Rest.Controllers;
 
 // DO NOT CHANGE ANYTHING!
 // NE VALTOZTASS MEG SEMMIT!

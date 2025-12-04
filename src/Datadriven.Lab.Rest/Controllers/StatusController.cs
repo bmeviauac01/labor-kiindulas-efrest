@@ -1,8 +1,8 @@
-﻿using Bme.Swlab1.Rest.Services;
+﻿using Datadriven.Lab.Rest.Services;
 
 using Microsoft.AspNetCore.Mvc;
 
-namespace Bme.Swlab1.Rest.Controllers;
+namespace Datadriven.Lab.Rest.Controllers;
 
 // TODO: REPLACE neptun WITH YOUR NEPTUN CODE SMALL CAPS
 // TODO: CSERELD LE A neptun-t a SAJAT NEPTUN KODODRA KISBETUKKEL

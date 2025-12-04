@@ -1,4 +1,4 @@
-﻿namespace Bme.Swlab1.Rest.Dtos;
+﻿namespace Datadriven.Lab.Rest.Dtos;
 
 // DO NOT CHANGE ANYTHING
 // NE VALTOZTASS MEG SEMMIT

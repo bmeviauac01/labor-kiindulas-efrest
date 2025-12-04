@@ -1,8 +1,8 @@
-﻿using Bme.Swlab1.Rest.Dtos;
+﻿using Datadriven.Lab.Rest.Dtos;
 
-using Task = Bme.Swlab1.Rest.Dtos.Task;
+using Task = Datadriven.Lab.Rest.Dtos.Task;
 
-namespace Bme.Swlab1.Rest.Services;
+namespace Datadriven.Lab.Rest.Services;
 
 // DO NOT MODIFY THE EXISTING METHODS
 // but you could extend this interface

@@ -1,7 +1,7 @@
-﻿using Bme.Swlab1.Rest.Dal;
-using Bme.Swlab1.Rest.Dtos;
+﻿using Datadriven.Lab.Rest.Dal;
+using Datadriven.Lab.Rest.Dtos;
 
-namespace Bme.Swlab1.Rest.Services;
+namespace Datadriven.Lab.Rest.Services;
 
 public class StatusService : IStatusService
 {

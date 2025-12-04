@@ -1,6 +1,6 @@
-﻿using Bme.Swlab1.Rest.Dtos;
+﻿using Datadriven.Lab.Rest.Dtos;
 
-namespace Bme.Swlab1.Rest.Services;
+namespace Datadriven.Lab.Rest.Services;
 
 // DO NOT MODIFY THE EXISTING METHODS
 // NE VALTOZTASD MEG A MEGLEVO FUGGVENYEKET

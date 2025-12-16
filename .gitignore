@@ -350,3 +350,5 @@ MigrationBackup/
 .ionide/
 api/tasks.db-shm
 api/tasks.db-wal
+
+.idea/

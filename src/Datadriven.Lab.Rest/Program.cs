@@ -20,3 +20,5 @@ using (var serviceScope = app.Services.CreateScope())
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }

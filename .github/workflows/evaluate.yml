@@ -30,7 +30,7 @@ jobs:
         run: dotnet build
 
       - name: Evaluate
-        uses: docker://ghcr.io/bmeviauac01/sflab-ahk:efrest-2026
+        uses: docker://ghcr.io/bmeviauac01/datadriven-lab-ahk-efrest:2026
 
       - name: Publish result
         uses: docker://ghcr.io/akosdudas/ahk-publish-results-pr:v1

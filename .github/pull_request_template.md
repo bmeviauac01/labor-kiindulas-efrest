@@ -5,7 +5,7 @@
 - A laborvezetődhöz akkor rendeld a pull request-et, amikor készen vagy, és beadod a megoldást.
 - Ne merge-eld a pull request-et.
 
-A folyamatot részletesen lásd itt: <https://bmeviauac01.github.io/laborok/GitHub/>
+A folyamatot részletesen lásd itt: <https://bmeviauac01.github.io/datadriven-lab/hu/GitHub/>
 
 #### A reminder how to use the _pull request_
 
@@ -14,4 +14,4 @@ A folyamatot részletesen lásd itt: <https://bmeviauac01.github.io/laborok/GitH
 - Assign the pull request to the instructor once you are finished and ready to submit.
 - Do not merge the pull request.
 
-Please refer to the detailed guide here: <https://bmeviauac01.github.io/laboratories-en/GitHub/>
+Please refer to the detailed guide here: <https://bmeviauac01.github.io/datadriven-lab/en/GitHub/>

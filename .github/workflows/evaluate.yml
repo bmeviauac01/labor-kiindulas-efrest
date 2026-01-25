@@ -27,7 +27,7 @@ jobs:
           dotnet-version: "10.0.x"
 
       - name: Build sln
-        run: dotnet build
+        run: dotnet build src/Datadriven.Lab.Rest.sln
 
       - name: Evaluate
         uses: docker://ghcr.io/bmeviauac01/datadriven-lab-ahk-efrest:2026
